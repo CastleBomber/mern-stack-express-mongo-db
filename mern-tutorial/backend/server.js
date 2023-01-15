@@ -1,3 +1,9 @@
+/**
+ * Javascript Backend Application
+ *
+ * npm run server (backend)
+ * npm run client (calls npm start for frontend )
+ */
 const { application } = require("express");
 const colors = require("colors");
 const express = require("express");
@@ -10,11 +16,11 @@ connectDB();
 
 const app = express();
 
-app.use(express.json()); 
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/goals", require("./routes/goalRoutes"));
-app.use("/api/users", require("./routes/userRoutes"))
+app.use("/api/users", require("./routes/userRoutes"));
 
 app.use(errorHandler);
 
