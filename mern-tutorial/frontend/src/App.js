@@ -9,7 +9,9 @@
  *  npm run server
  *  npm run client
  *  npm run dev - runs both server && client
+ *
  *  cmd+D will change opening and closing tag simultaneously
+ *  cmd+D (+ D..) change multiple nearby instances of a name
  */
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
